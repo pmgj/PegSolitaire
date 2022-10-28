@@ -1,0 +1,45 @@
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+caption {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid gray;
+    width: 53px;
+    height: 53px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr:nth-child(1) td:nth-child(1),
+tr:nth-child(1) td:nth-child(2),
+tr:nth-child(1) td:nth-child(6),
+tr:nth-child(1) td:nth-child(7),
+tr:nth-child(2) td:nth-child(1),
+tr:nth-child(2) td:nth-child(2),
+tr:nth-child(2) td:nth-child(6),
+tr:nth-child(2) td:nth-child(7),
+tr:nth-child(6) td:nth-child(1),
+tr:nth-child(6) td:nth-child(2),
+tr:nth-child(6) td:nth-child(6),
+tr:nth-child(6) td:nth-child(7),
+tr:nth-child(7) td:nth-child(1),
+tr:nth-child(7) td:nth-child(2),
+tr:nth-child(7) td:nth-child(6),
+tr:nth-child(7) td:nth-child(7) {
+    border: 0;
+}
+
+img.fade {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+#message {
+    text-align: center;
+}
