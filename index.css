@@ -10,10 +10,11 @@ caption {
 
 td {
     border: 1px solid gray;
-    width: 53px;
-    height: 53px;
     text-align: center;
     vertical-align: middle;
+    --cell-size: 8vmin;
+    width: clamp(30px, var(--cell-size), 50px);
+    height: clamp(30px, var(--cell-size), 50px);
 }
 
 tr:nth-child(1) td:nth-child(1),
