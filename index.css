@@ -11,8 +11,10 @@ caption {
 td {
     border: 1px solid gray;
     text-align: center;
-    vertical-align: middle;
-    --cell-size: 8vmin;
+}
+
+td, img {
+    --cell-size: 10vmin;
     width: clamp(30px, var(--cell-size), 50px);
     height: clamp(30px, var(--cell-size), 50px);
 }
@@ -40,11 +42,6 @@ img {
     vertical-align: middle;
     position: relative;
     animation-fill-mode: backwards;
-}
-
-img.fade {
-    transition: opacity 1s ease-in-out;
-    opacity: 0;
 }
 
 #message {
