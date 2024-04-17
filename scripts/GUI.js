@@ -84,6 +84,7 @@ class GUI {
         this.game = new PegSolitaire();
         let board = this.game.getBoard();
         let tbody = document.querySelector("tbody");
+        tbody.innerHTML = "";
         for (let i = 0; i < board.length; i++) {
             let tr = document.createElement("tr");
             for (let j = 0; j < board[i].length; j++) {
@@ -103,6 +104,11 @@ class GUI {
             tbody.appendChild(tr);
         }
     }
+    registerEvents() {
+        this.init();
+        let iniciar = document.querySelector("input[type='button']");
+        iniciar.onclick = this.init.bind(this);
+    }
 }
 let gui = new GUI();
-gui.init();
+gui.registerEvents();

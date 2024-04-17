@@ -3,20 +3,17 @@ table {
     margin: 0 auto;
 }
 
-caption {
-    font-size: xx-large;
-    font-weight: bold;
-}
-
 td {
     border: 1px solid gray;
     text-align: center;
-}
-
-td, img {
     --cell-size: 10vmin;
     width: clamp(30px, var(--cell-size), 50px);
     height: clamp(30px, var(--cell-size), 50px);
+}
+
+td img {
+    width: 95%;
+    height: 95%;
 }
 
 tr:nth-child(1) td:nth-child(1),
@@ -38,12 +35,8 @@ tr:nth-child(7) td:nth-child(7) {
     border: 0;
 }
 
-img {
+main td img {
     vertical-align: middle;
     position: relative;
     animation-fill-mode: backwards;
-}
-
-#message {
-    text-align: center;
 }
